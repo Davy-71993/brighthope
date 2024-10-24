@@ -24,4 +24,71 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .fly-in-from-top {
+    animation-name: fly-in-from-top;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fly-in-from-top {
+    from {
+      transform: translateY(-1.25rem);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .fly-in-from-bottom {
+    animation-name: fly-in-from-bottom;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fly-in-from-bottom {
+    from {
+      transform: translateY(1.25rem);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .fly-in-from-left {
+    animation-name: fly-in-from-left;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fly-in-from-left {
+    from {
+      transform: translatex(-1.25rem);
+      opacity: 0;
+    }
+    to {
+      transform: translatex(0);
+      opacity: 1;
+    }
+  }
+
+  .fly-in-from-right {
+    animation-name: fly-in-from-right;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fly-in-from-right {
+    from {
+      transform: translatex(1.25rem);
+      opacity: 0;
+    }
+    to {
+      transform: translatex(0);
+      opacity: 1;
+    }
+  }
 }
