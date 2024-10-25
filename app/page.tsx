@@ -3,12 +3,17 @@ import Container from "@/components/layout/Container";
 import { gallary } from "@/components/ui/app";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  FaFacebook,
+  FaInstagramSquare,
+  FaWhatsappSquare,
+} from "react-icons/fa";
 
 export default function Home() {
   return (
     <div className="w-full">
       <div className="w-full min-h-screen relative" id="">
-        <div className="w-full min-h-screen text-slate-100 absolute top-0 left-0 bg-gradient-to-r from-indigo-500/70 via-purple-500/70 to-pink-500/80 flex justity-center pt-10">
+        <div className="w-full min-h-screen text-slate-100 absolute top-0 left-0 bg-gradient-to-r from-indigo-500/70 via-purple-500/70 to-pink-500/80 flex justity-center pt-10 sm:pt-20">
           <div className="w-full h-full transition-all duration-500 max-w-3xl mx-auto text-center py-10">
             <FlyIn from={"top"}>
               <h1 className="text-2xl sm:text-4xl font-[500]">Welcome to</h1>
@@ -204,12 +209,12 @@ export default function Home() {
           </div>
         </Container>
       </div>
-      <div id="sponsorship" className="py-20 min-h-screen">
+      <div id="sponsorship" className="py-20">
         <Container>
-          <h1 className="text-3xl md:text-4xl text-center text-slate-800 font-[700]">
+          <h1 className="text-3xl md:text-4xl text-slate-800 font-[700]">
             Sponsorship.
           </h1>
-          <div className="w-full py-5">
+          <div className="w-full py-5 border-b-2 mb-10">
             <p className="text-xl mb-10">
               Bright Hope Orphanage School is funded and supported by the
               devoted members of Lumino Town Baptist Church and Partners from
@@ -217,10 +222,10 @@ export default function Home() {
               coming along to walk with us in this glorious journey. We request
               for your prayerful and financial support towards this noble task.
             </p>
-            <p className="text-lg mb-5">
-              CHALLENGES AND PRAYER CONCERNS AS WE MINISTER TO THESE CHILDREN:
+            <p className="text-lg mb-5 font-bold">
+              Challanges and prayer concerns as we minister to these children:
             </p>
-            <ol className="flex list-none gap-5 justify-center flex-wrap">
+            <ol className="flex list-none gap-5 flex-wrap">
               {[
                 "Need for food",
                 "Scholastic materials",
@@ -236,10 +241,54 @@ export default function Home() {
                   key={i}
                   className="p-5 text-xl rounded-xl bg-blue-500 text-blue-50"
                 >
-                  {c}
+                  {i + 1}. {c}
                 </li>
               ))}
             </ol>
+          </div>
+          <Link
+            href={"/#"}
+            className="block w-full max-w-60 px-5 py-3 text-xl font-[400] text-center rounded-lg bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 text-slate-100"
+          >
+            Start Sponsoring
+          </Link>
+        </Container>
+      </div>
+      <div id="contact-us" className="py-10">
+        <Container className="bg-sky-800 text-sky-200 p-10 rounded-lg flex flex-col gap-5">
+          <h1 className="text-4xl font-[700]">Get in touch with us.</h1>
+          <div className="w-full flex gap-5 flex-col sm:flex-row">
+            <div className="w-full bg-sky-700 rounded-lg p-10">
+              <div className="bg-sky-800 min-h-96 rounded-lg w-full max-w-96 mx-auto"></div>
+            </div>
+            <div className="w-full flex flex-col justify-center">
+              <h1 className="text-3xl">Bright Hope Orphanage,</h1>
+              <p className="text-lg font-thin">
+                Plot 129, Majanji Rd. Lumino Busia Ug,
+              </p>
+              <p className="text-lg font-thin">P.O.BOX 503,</p>
+              <p className="text-lg font-thin">Busia (U).</p>
+              <h1 className="text-2xl mt-10">
+                Email: <span className="font-bold">hillyww@gmail.com</span>
+              </h1>
+              <h1 className="text-2xl">
+                Tell: <span className="font-bold">+256772325299</span>
+              </h1>
+              <div className="mt-10 flex gap-5 flex-wrap">
+                <FaFacebook
+                  size={30}
+                  className="hover:text-sky-100 transition-all duration-300 hover:scale-125"
+                />
+                <FaInstagramSquare
+                  size={30}
+                  className="hover:text-sky-100 transition-all duration-300 hover:scale-125"
+                />
+                <FaWhatsappSquare
+                  size={30}
+                  className="hover:text-sky-100 transition-all duration-300 hover:scale-125"
+                />
+              </div>
+            </div>
           </div>
         </Container>
       </div>

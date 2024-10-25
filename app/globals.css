@@ -27,6 +27,7 @@ body {
   .fly-in-from-top {
     animation-name: fly-in-from-top;
     animation-duration: 0.5s;
+    /* animation-delay: 500ms; */
     animation-fill-mode: forwards;
   }
 
@@ -44,6 +45,7 @@ body {
   .fly-in-from-bottom {
     animation-name: fly-in-from-bottom;
     animation-duration: 0.5s;
+    /* animation-delay: 500ms; */
     animation-fill-mode: forwards;
   }
 
@@ -61,6 +63,7 @@ body {
   .fly-in-from-left {
     animation-name: fly-in-from-left;
     animation-duration: 0.5s;
+    /* animation-delay: 500ms; */
     animation-fill-mode: forwards;
   }
 
@@ -78,6 +81,7 @@ body {
   .fly-in-from-right {
     animation-name: fly-in-from-right;
     animation-duration: 0.5s;
+    /* animation-delay: 500ms; */
     animation-fill-mode: forwards;
   }
 
