@@ -1,4 +1,5 @@
 import FlyIn from "@/components/animations/FlyIn";
+import ContactForm from "@/components/layout/ContactForm";
 import Container from "@/components/layout/Container";
 import { gallary } from "@/components/ui/app";
 import Image from "next/image";
@@ -259,7 +260,9 @@ export default function Home() {
           <h1 className="text-4xl font-[700]">Get in touch with us.</h1>
           <div className="w-full flex gap-5 flex-col sm:flex-row">
             <div className="w-full bg-sky-700 rounded-lg p-10">
-              <div className="bg-sky-800 min-h-96 rounded-lg w-full max-w-96 mx-auto"></div>
+              <div className="bg-sky-800 min-h-96 rounded-lg w-full max-w-96 mx-auto">
+                <ContactForm />
+              </div>
             </div>
             <div className="w-full flex flex-col justify-center">
               <h1 className="text-3xl">Bright Hope Orphanage,</h1>

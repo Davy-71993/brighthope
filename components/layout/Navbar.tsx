@@ -83,7 +83,7 @@ const Navbar = () => {
               </div>
               <div className="px-5 sm:px-0 pt-10 sm:pt-0 pb-5 sm:pb-0 w-full">
                 <Link
-                  href={"/donate"}
+                  href={"/#contact-us"}
                   onClick={handleOpenClose}
                   className="px-2 sm:px-3 sm:text-sm md:text-base md:px-5 py-2 flex w-full bg-slate-100 h-fit hover:bg-slate-200 transition-colors duration-300 font-bold text-blue-700 rounded-lg"
                 >
