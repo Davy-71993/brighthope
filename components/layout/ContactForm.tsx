@@ -2,7 +2,7 @@
 
 const ContactForm = () => {
   return (
-    <div className="w-full flex flex-col gap-12 p-5">
+    <div className="w-full p-5 border-2 border-sky-300 rounded-lg max-w-96 mx-auto flex flex-col gap-12">
       <h1 className="text-lg font-[400]">
         We really appreciate your visit. please leave us a message.
       </h1>
